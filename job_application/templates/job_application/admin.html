@@ -1,0 +1,52 @@
+{% extends "job_application/layout.html"%}
+{% load static %}
+
+{% block body %}
+        
+    <header>
+        <nav>
+            <a  href="{% url 'index' %} ">HOME</a>
+            <a  href="{% url 'apply' %}">APPLY</a>
+            <a  href="{% url 'admin' %}">ADMIN</a>     
+        </nav>
+        <img src="{% static 'job_application/nigeria.jpg' %}"><h1>Employer Dashboard</h1>
+    </header>
+
+    <main>
+        <h2>Applicant Information</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date of Birth</th>
+                    <th>Contact Number</th>
+                    <th>Qualification</th>
+                    <th>Skills</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample data, replace with actual applicant information -->
+                <tr>
+                    <td>John Doe</td>
+                    <td>1990-01-01</td>
+                    <td>123-456-7890</td>
+                    <td>Bachelor's Degree</td>
+                    <td>Communication, Organization</td>
+                    <td><button>View Details</button></td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>1985-05-15</td>
+                    <td>987-654-3210</td>
+                    <td>Master's Degree</td>
+                    <td>Leadership, Project Management</td>
+                    <td><button>View Details</button></td>
+                </tr>
+                <!-- Add more rows for additional applicants -->
+            </tbody>
+        </table>
+    </main>
+
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "job_application/layout.html"%}
+{% load static %}
+
+{% block body %}
+        
+ 
+    <header>
+        <nav>
+            <a  href="{% url 'index' %} ">HOME</a>
+            <a  href="{% url 'apply' %}">APPLY</a>
+            <a  href="{% url 'admin' %}">ADMIN</a>     
+        </nav>
+        <img src="{% static 'job_application/nigeria.jpg' %}"><h1>Local Government Job Recruitment</h1>
+    </header>
+
+    <main>
+         
+        <h2>Job Title: Administrative Assistant</h2>
+
+        <h3>Requirements:</h3>
+        <ul>
+            <li>Minimum educational qualification: Bachelor's Degree</li>
+            <li>Experience in administrative roles</li>
+            <li>Strong organizational and communication skills</li>
+        </ul>
+
+        <h3>Qualifications:</h3>
+        <ul>
+            <li>Bachelor's Degree in Business Administration or related field</li>
+            <li>Excellent computer skills (MS Office, Excel, etc.)</li>
+        </ul>
+
+        <h3>Responsibilities:</h3>
+        <p>The Administrative Assistant will be responsible for managing office operations, organizing meetings, handling correspondence, and providing support to senior staff members.</p>
+
+        <h3>How to Apply:</h3>
+        <p>Interested candidates should submit their resume, cover letter, and relevant documents to hr@localgovernment.gov. Please mention "Admin Assistant Application" in the email subject.</p>
+
+        <button><a class="nav-link" href="{% url 'apply' %}">APPLY NOW</a></button>
+    </main>
+
+{% endblock %}

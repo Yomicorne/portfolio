@@ -1,0 +1,76 @@
+{% extends "job_application/layout.html"%}
+{% load static %}
+
+{% block body %}
+    <header>
+        <nav>
+            <a  href="{% url 'index' %} ">HOME</a>
+            <a  href="{% url 'apply' %}">APPLY</a>
+            <a  href="{% url 'admin' %}">ADMIN</a>    
+        </nav>
+        <img src="{% static 'job_application/nigeria.jpg' %}"><h1>Local Government Job Recruitment</h1>
+    </header>
+
+
+    <main>
+        <h2>Available Positions:</h2>
+        
+        <ul>
+            <li>
+                <a href="{% url 'details' %} ">
+                    <h3>Administrative Assistant</h3>
+                
+                    <p>
+                        The Administrative Assistant will play a key role in supporting the daily administrative operations of the local government office. Responsibilities include managing schedules, handling correspondence, and coordinating office activities.
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'details' %} ">
+                    <h3>Finance Officer</h3>
+                
+                    <p>
+                        The Finance Officer will be responsible for managing financial transactions, budgeting, and accounting for the local government. This role involves ensuring compliance with financial regulations, preparing financial reports, and providing financial advice to department heads.
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'details' %} ">
+                    <h3>Community Development Specialist</h3>
+                
+                    <p>
+                        The Community Development Specialist will coordinate and implement community development projects and initiatives. This includes engaging with local communities, conducting needs assessments, and collaborating with stakeholders to enhance community well-being.
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'details' %} ">
+                    <h3>Environmental Planner</h3>
+                
+                    <p>
+                        The Environmental Planner will contribute to sustainable development by planning and managing environmental initiatives. Responsibilities include conducting environmental impact assessments, developing environmental policies, and collaborating with government agencies and environmental organizations.
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'details' %} ">
+                    <h3>IT Support Specialist</h3>
+                
+                    <p>
+                        The IT Support Specialist will provide technical support for the local government's IT infrastructure and systems. This role involves troubleshooting hardware and software issues, maintaining network security, and assisting staff with IT-related concerns.
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'details' %} ">
+                    <h3>Public Relations Manager</h3>
+                
+                    <p>
+                        The Public Relations Manager will be responsible for managing communication strategies and public relations for the local government. This includes crafting press releases, managing media relations, and developing communication plans to enhance the local government's public image.
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </main>
+
+{% endblock %}
